@@ -1,0 +1,99 @@
+/* Adicionales */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Roboto&display=swap');
+
+.container-contact{
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px 100px;
+  margin-top: 80px;
+}
+
+.contact-box{
+  max-width: 850px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.left{
+  height: 100%;
+  background: url("class-1.jpg") no-repeat center;
+  background-size: cover;
+}
+
+form label{
+  font-size: 16px;
+  text-align: left;
+}
+
+.right{
+  padding: 25px 40px;
+}
+
+.container-contact h2{
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  color: #ace28d;
+}
+
+.container-contact h4{
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.field{
+  width: 100%;
+  padding: 0.5rem 1rem;
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0);
+  background-color: rgba(230, 230, 230, 0.6);
+  font-size: 1.1rem;
+  margin-bottom: 22px;
+  transition: .3s;
+}
+
+.field:hover{
+  background-color: rgba(0, 0, 0, 0);
+}
+
+.field:focus{
+  background-color: #fff;
+  border: 2px solid rgba(30, 85, 250, 0.47);
+}
+
+.area{
+  min-height: 150px;
+}
+
+.btn-send{
+  width: 100%;
+  padding: 0.5rem 1rem;
+  font-size: 1.1rem;
+  background-color: #ace28d;
+  cursor: pointer;
+  outline: none;
+  border: none;
+  color: black;
+  transition: .3s;
+}
+
+.btn-send:hover{
+  background-color: black;
+  color: #ace28d;
+}
+
+@media (max-width: 560px) {
+  .contact-box{
+    max-width: 460px;
+  }
+}

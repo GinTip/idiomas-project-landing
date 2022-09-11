@@ -1,0 +1,318 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&family=Roboto&display=swap');
+
+/* General */
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* Header */
+
+header{
+  position: relative;
+  top: 0;
+  width: 100%;
+  padding: 30px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+}
+
+header .logo{
+  position: relative;
+  color: #000;
+  font-size: 30px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 800;
+  letter-spacing: 1px;
+}
+
+/* Barra de navegacion */
+
+header .navigation a{
+  color: #fff;
+  background: #000;
+  text-decoration: none;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 80px;
+  padding: 5px 20px;
+  border-radius: 20px;
+  transition: 0.3s;
+  transition-property: initial;
+}
+
+header .navigation a:not(:last-child){
+  margin-right: 30px;
+}
+
+header .navigation a:hover{
+  background: #ace28d;
+}
+
+/* Jumbotron */
+
+.jumbotron{
+  padding: 50px;
+  position: relative;
+  width: 100%;
+  min-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  background: url("world.jpg")no-repeat;
+  background-size: cover;
+}
+
+.content{
+  max-width: 650px;
+  margin: 60px 100px;
+}
+
+.content .info h2{
+  color: #ace28d;
+  font-size: 55px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  line-height: 60px;
+  margin-bottom: 30px;
+}
+
+.content .info h2 span{
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.content .info p{
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 40px;
+}
+
+.content .info-btn{
+  color: #000000;
+  background: #ace28d;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  letter-spacing: 2px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: 0.3s;
+  transition-property: initial;
+}
+
+.content .info-btn:hover{
+  color: #ace28d;
+  background: #000;
+}
+
+/* Icono de redes sociales */
+
+.media-icons{
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+.media-icons a{
+  position: relative;
+  color: #000;
+  font-size: 25px;
+  transition: 0.3s;
+  transition-property: initial;
+}
+
+.media-icons a:not(:last-child){
+  margin-right: 60px;
+}
+
+.media-icons a:hover{
+  transform: scale(1.3);
+}
+
+/* Efecto de menu de barras */
+
+label{
+  display: none;
+}
+
+#check{
+  z-index: 3;
+  display: none;
+}
+
+/* Subtitulos */
+
+.subtitulos{
+  text-align: center;
+  font-size: 40px;
+  margin: 50px 10px;
+  font-weight: 500;
+}
+
+/* Sección de catálogo */
+
+.container-1{
+  width: 100%;
+  max-width: 1200px;
+  height: 430;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: auto;
+}
+
+/* DISEÑO RESPONSIVO */
+
+@media (max-width: 1000px) {
+  header .navigation{
+    display: none;
+  }
+
+  label{
+    display: block;
+    font-size: 25px;
+    cursor: pointer;
+    transition: 0.3s;
+    transition-property: color;
+  }
+
+  label:hover{
+    color: #ace28d;
+  }
+
+  label .close-btn{
+    display: none;
+  }
+
+  .content{
+    width: min-content;
+  }
+
+  .content .info-btn{
+    font-weight: 700;
+    letter-spacing: 2px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: 0.3s;
+    transition-property: initial;
+  }
+
+  #check:checked ~ header .navigation{
+    z-index: 2;
+    position: fixed;
+    background-color: rgb(0, 0, 0, 0.9);
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #check:checked ~ header .navigation a{
+    font-weight: 700;
+    margin-right: 0;
+    margin-bottom: 50px;
+    letter-spacing: 2px;
+  }
+
+  #check:checked ~ header label .menu-btn{
+    display: none;
+  }
+
+  #check:checked ~ header label .close-btn{
+    z-index: 2;
+    display: block;
+    position: fixed;
+    color: #fff;
+  }
+
+  label .menu-btn{
+    position: absolute;
+    bottom: 20px;
+  }
+
+  header .logo{
+    position: absolute;
+    bottom: 10px;
+  }
+
+  .content .info h2{
+    font-size: 45px;
+    line-height: 50px;
+  }
+
+  .content .info h2 span{
+    font-size: 40px;
+    font-weight: 600;
+  }
+
+  .content .info p{
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 560px) {
+
+  .jumbotron{
+    padding: 10px;
+    position: relative;
+    width: 100%;
+    min-height: 40vh;
+  }
+
+  .content{
+    max-width: 650px;
+    margin: 30px 90px;
+  }
+  
+  .content .info h2{
+    font-size: 35px;
+    line-height: 40px;
+    margin-bottom: 10px;
+  }
+  
+  .content .info h2 span{
+    font-size: 30px;
+    font-weight: 600;
+  }
+  
+  .content .info p{
+    margin-bottom: 20px;
+  }
+  
+  .content .info-btn{
+    font-size: 15px;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+    transition-property: initial;
+  }
+
+  .content .info h2{
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .content .info h2 span{
+    font-size: 30px;
+    font-weight: 600;
+  }
+
+  .content .info p{
+    font-size: 14px;
+  }
+}

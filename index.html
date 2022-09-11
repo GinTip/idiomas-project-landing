@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./styles/styles.css">
+  <link rel="stylesheet" href="./styles/footer.css">
+  <link rel="stylesheet" href="./styles/cards.css">
+  <link rel="stylesheet" href="./styles/adicionales.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+  <title>.IDIOMA</title>
+</head>
+
+<body>
+  <input type="checkbox" id="check">
+  <!-- Header -->
+  <header>
+    <h2><a href="#" class="logo">.Idioma</a></h2>
+    <div class="navigation">
+      <a href="#">Home</a>
+      <a href="#">Nosotros</a>
+      <a href="#cursos">Cursos</a>
+      <a href="#">Contacto</a>
+    </div>
+    <label for="check">
+      <i class="fas fa-bars menu-btn"></i>
+      <i class="fas fa-times close-btn"></i>
+    </label>
+  </header>
+  <div class="jumbotron">
+    <div class="content">
+      <div class="info">
+        <h2>Cursos de Idiomas <br><span>¡Inscríbete!</span></h2>
+        <p>Si es la primera vez que estudias un idioma, nosotros te enseñaremos a hablarlo y entenderlo paso a paso
+          hasta nivel avanzado. Y si ya eres avanzado y quieres mejorar tu nivel, también tenemos cursos para ti.</p>
+        <a href="#" class="info-btn">Más información</a>
+      </div>
+    </div>
+  </div>
+  <!-- Catálogo -->
+  <section>
+    <h2 class="subtitulos">Idiomas que puedes aprender con nosotros</h2>
+    <div class="container-1" id="cursos">
+      <!-- Cards -->
+      <div class="card">
+        <div>
+          <img src="./images/eua.jpg" alt="bandera de estados unidos">
+          <h4>Inglés</h4>
+          <p>Aprende inglés desde el nivel más básico (A1) hasta el nivel más avanzado (C2). También puedes prepararte
+            para tu examen TOEFL.</p>
+        </div>
+        <div class="inscribete-btn">
+          <a href="#">Inscríbete</a>
+        </div>
+      </div>
+
+      <div class="card">
+        <img src="./images/francia.jpg" alt="bandera de francia">
+        <h4>Francés</h4>
+        <p>Aprende francés desde el nivel más básico (A1) hasta el nivel más avanzado (C2).</p>
+        <a href="#" class="inscribete-btn">Inscríbete</a>
+      </div>
+
+      <div class="card">
+        <img src="./images/alemania.jpg" alt="bandera de alemania">
+        <h4>Alemán</h4>
+        <p>Aprende alemán desde el nivel más básico (A1) hasta el nivel más avanzado (C2).</p>
+        <a href="#" class="inscribete-btn">Inscríbete</a>
+      </div>
+
+    </div>
+  </section>
+  <!-- Adicionales -->
+  <div class="container-contact">
+    <div class="contact-box">
+      <div class="left"></div>
+      <div class="right">
+        <form>
+          <h2>¡Contáctanos!</h2>
+          <h4>Si tienes más dudas envíanos un mensaje</h4>
+          <div>
+            <label for="nombre">Nombre</label>
+            <input type="text" class="field" id="nombre" placeholder="Nombre" autocomplete="off"> 
+          </div>
+          <div>
+            <label for="email">Email</label>
+            <input type="email" class="field" id="nombre" placeholder="Email" autocomplete="off">
+          </div>
+          <div>
+            <label for="phone">Teléfono</label>
+            <input type="text" class="field" id="nombre" placeholder="Telefono" autocomplete="off">
+          </div>
+          <label for="mensaje">Mensaje</label>
+          <textarea class="field area" placeholder="Mensaje" id="mensaje"></textarea>
+          <button class="btn-send">Enviar</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <!-- Footer -->
+  <footer>
+    <div class="container_footer">
+      <div class="box_footer">
+        <h2 style="text-align: center;">Redes sociales</h2>
+        <div class="media-icons">
+          <a href="#"><i class="fa-brands fa-facebook"></i></a>
+          <a href="#"><i class="fa-brands fa-twitter"></i></a>
+          <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        </div>
+      </div>
+      <div class="box_footer">
+        <h2>.IDIOMA</h2>
+        <a href="#">Home</a>
+        <a href="#">Nosotros</a>
+        <a href="#cursos">Cursos</a>
+        <a href="#">Contacto</a>
+      </div>
+      <div class="box_footer">
+        <h2>Cursos</h2>
+        <a href="#">Inglés</a>
+        <a href="#">Francés</a>
+        <a href="#">Contacto</a>
+      </div>
+    </div>
+    <div class="box_copyright">
+      <hr>
+      <p>© 2022 <strong>.IDIOMA</strong>. Todos los derechos reservados. Esta es una página de aterrizaje ficticia para
+        fines académicos.</p>
+    </div>
+  </footer>
+</body>
+
+</html>
