@@ -85,6 +85,7 @@ form label{
   border: none;
   color: black;
   transition: .3s;
+  border-radius: 5px;
 }
 
 .btn-send:hover{
